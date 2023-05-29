@@ -1,0 +1,30 @@
+﻿@model Ushtrime2ProvimGrupi1.Entities.Autori
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Autori</h4>
+    <hr />
+    <dl class="row">
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Emri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Emri)
+        </dd>
+        <dt class = "col-sm-2">
+            @Html.DisplayNameFor(model => model.Mbiemri)
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.Mbiemri)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
